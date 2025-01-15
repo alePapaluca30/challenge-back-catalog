@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "sku": "sku-101",
+        "name": "Apple iPhone 14",
+        "description": "Apple iPhone 14 with 128GB Storage",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-select-2022?wid=940&hei=1112&fmt=png-alpha&.v=1661026218650",
+        "category": { "id": "cat-001", "name": "Smartphones" },
+        "brand": "Apple",
+        "price": 799.99,
+        "stock": 50,
+        "specifications": [
+          { "name": "Color", "value": "Midnight" },
+          { "name": "Screen Size", "value": "6.1 inches" }
+        ]
+      },
+      {
+        "sku": "sku-102",
+        "name": "Samsung Galaxy S23",
+        "description": "Samsung Galaxy S23 with 256GB Storage",
+        "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/galaxy-s23/gallery/levant-galaxy-s23-s911-sm-s911bzdumid-533071229?$650_519_PNG$",
+        "category": { "id": "cat-001", "name": "Smartphones" },
+        "brand": "Samsung",
+        "price": 849.99,
+        "stock": 40,
+        "specifications": [
+          { "name": "Color", "value": "Phantom Black" },
+          { "name": "Screen Size", "value": "6.1 inches" }
+        ]
+      },
+      {
+        "sku": "sku-103",
+        "name": "Sony WH-1000XM5",
+        "description": "Sony Noise Cancelling Wireless Headphones",
+        "image": "https://m.media-amazon.com/images/I/51sk5O06qRL._AC_SL1200_.jpg",
+        "category": { "id": "cat-002", "name": "Headphones" },
+        "brand": "Sony",
+        "price": 399.99,
+        "stock": 30,
+        "specifications": [
+          { "name": "Color", "value": "Silver" },
+          { "name": "Battery Life", "value": "30 hours" }
+        ]
+      },
+      {
+        "sku": "sku-104",
+        "name": "Dell XPS 13 Laptop",
+        "description": "Dell XPS 13 with Intel Core i7 Processor",
+        "image": "https://i.dell.com/sites/imagecontent/products/publishingimages/xps-13-9315-laptop/family-pdp-xps-13-9315-laptop-gallery1.png",
+        "category": { "id": "cat-003", "name": "Laptops" },
+        "brand": "Dell",
+        "price": 1249.99,
+        "stock": 20,
+        "specifications": [
+          { "name": "Screen Size", "value": "13.4 inches" },
+          { "name": "Weight", "value": "1.2kg" }
+        ]
+      },
+      {
+        "sku": "sku-105",
+        "name": "Logitech MX Master 3",
+        "description": "Logitech Advanced Wireless Mouse",
+        "image": "https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/mx-master-3s-mouse-mouse-main-gallery-charcoal-01.png?v=1",
+        "category": { "id": "cat-004", "name": "Accessories" },
+        "brand": "Logitech",
+        "price": 99.99,
+        "stock": 60,
+        "specifications": [
+          { "name": "Color", "value": "Graphite" },
+          { "name": "Connectivity", "value": "Wireless" }
+        ]
+      }
+    ]
+  }
+  
