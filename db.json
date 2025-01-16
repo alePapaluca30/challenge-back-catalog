@@ -2,100 +2,282 @@
   "products": [
     {
       "sku": "sku-201",
-      "name": "T-Shirt Casual",
-      "description": "Comfortable cotton t-shirt in various colors",
-      "image": "https://example.com/tshirt.jpg",
-      "category": { "id": "cat-001", "name": "Clothing" },
+      "name": "Camiseta Casual",
+      "description": "Camiseta de algodón cómoda en varios colores",
+      "image": "https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437146.jpg?t=st=1736968904~exp=1736972504~hmac=44719ee7d9eabefccd1f17b518947df4b0bf6b34efd472d68cfbf42d8cede583&w=826",
+      "category": { "id": "cat-001", "name": "Ropa" },
       "brand": "Nike",
       "price": 29.99,
       "stock": 150,
       "specifications": [
-        { "name": "Color", "value": "White" },
-        { "name": "Size", "value": "M, L, XL" }
+        { "name": "Color", "value": "Blanco" },
+        { "name": "Tamaño", "value": "M, L, XL" }
       ]
     },
     {
       "sku": "sku-202",
       "name": "Apple iPhone 13",
-      "description": "Apple iPhone 13 with 128GB Storage",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-select-2022.jpg",
-      "category": { "id": "cat-002", "name": "Smartphones" },
+      "description": "Apple iPhone 13 con 128GB de almacenamiento",
+      "image": "https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437146.jpg?t=st=1736968904~exp=1736972504~hmac=44719ee7d9eabefccd1f17b518947df4b0bf6b34efd472d68cfbf42d8cede583&w=826",
+      "category": { "id": "cat-002", "name": "Celulares" },
       "brand": "Apple",
       "price": 799.99,
       "stock": 40,
       "specifications": [
-        { "name": "Color", "value": "Blue" },
-        { "name": "Screen Size", "value": "6.1 inches" }
+        { "name": "Color", "value": "Azul" },
+        { "name": "Tamaño de pantalla", "value": "6.1 pulgadas" }
       ]
     },
     {
       "sku": "sku-203",
-      "name": "Running Shoes",
-      "description": "Lightweight running shoes for outdoor sports",
-      "image": "https://example.com/runningshoes.jpg",
-      "category": { "id": "cat-003", "name": "Clothing" },
+      "name": "Zapatillas de Running",
+      "description": "Zapatillas ligeras para correr y hacer deportes al aire libre",
+      "image": "https://www.freepik.com/free-photo/senior-man-as-runner-with-armband-fitness-tracker-riverside_12701180.htm#fromView=search&page=1&position=13&uuid=3dddda65-feb7-4281-83dc-71a01e40c72d&new_detail=true",
+      "category": { "id": "cat-003", "name": "Ropa" },
       "brand": "Adidas",
       "price": 79.99,
       "stock": 100,
       "specifications": [
-        { "name": "Color", "value": "Black" },
-        { "name": "Size", "value": "38, 40, 42" }
+        { "name": "Color", "value": "Negro" },
+        { "name": "Tamaño", "value": "38, 40, 42" }
       ]
     },
     {
       "sku": "sku-204",
       "name": "Samsung Galaxy S21",
-      "description": "Samsung Galaxy S21 with 128GB Storage",
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/galaxy-s21/gallery/levant-galaxy-s21-s911-sm-s911bzdumid-533071229.jpg",
-      "category": { "id": "cat-002", "name": "Smartphones" },
+      "description": "Samsung Galaxy S21 con 128GB de almacenamiento",
+      "image": "https://www.freepik.com/free-vector/smartphone-lock-screens-with-traveler-winter-mountains_15755573.htm#fromView=search&page=1&position=12&uuid=6e4af035-c6de-472d-99ae-ef27081d0083&new_detail=true",
+      "category": { "id": "cat-002", "name": "Celulares" },
       "brand": "Samsung",
       "price": 799.99,
       "stock": 60,
       "specifications": [
         { "name": "Color", "value": "Phantom Violet" },
-        { "name": "Screen Size", "value": "6.2 inches" }
+        { "name": "Tamaño de pantalla", "value": "6.2 pulgadas" }
       ]
     },
     {
       "sku": "sku-205",
-      "name": "Leather Jacket",
-      "description": "Stylish leather jacket for men",
-      "image": "https://example.com/leatherjacket.jpg",
-      "category": { "id": "cat-001", "name": "Clothing" },
+      "name": "Chaqueta de Cuero",
+      "description": "Chaqueta de cuero estilosa para hombres",
+      "image": "https://img.freepik.com/free-photo/portrait-beautiful-smiling-brunette-model-dressed-summer-hipster-jacket-jeans-clothes-trendy-girl-sitting-steps-street-background-funny-positive-woman-round-sunglasses_158538-1701.jpg?t=st=1736969033~exp=1736972633~hmac=c2e36bc407590b89bb325620c1c00b5d9920e7868f14fbc99646e0ab1fb6abf5&w=1800",
+      "category": { "id": "cat-001", "name": "Ropa" },
       "brand": "Zara",
       "price": 149.99,
       "stock": 80,
       "specifications": [
-        { "name": "Color", "value": "Black" },
-        { "name": "Size", "value": "S, M, L, XL" }
+        { "name": "Color", "value": "Negro" },
+        { "name": "Tamaño", "value": "S, M, L, XL" }
       ]
     },
     {
       "sku": "sku-206",
       "name": "HP Spectre x360",
-      "description": "HP Spectre x360 Laptop with Intel Core i7 and 16GB RAM",
-      "image": "https://example.com/hpspectrex360.jpg",
+      "description": "Laptop HP Spectre x360 con procesador Intel Core i7 y 16GB de RAM",
+      "image": "https://img.freepik.com/free-photo/high-angle-view-cropped-man-filling-online-calendar_1098-20531.jpg?t=st=1736969075~exp=1736972675~hmac=0fa3cdf27df7e0b5c1cff0298c1de562c1a28c255e0df80a6eac3b53866a4e3b&w=826",
       "category": { "id": "cat-004", "name": "Laptops" },
       "brand": "HP",
       "price": 1499.99,
       "stock": 30,
       "specifications": [
-        { "name": "Screen Size", "value": "13.3 inches" },
-        { "name": "Processor", "value": "Intel Core i7" }
+        { "name": "Tamaño de pantalla", "value": "13.3 pulgadas" },
+        { "name": "Procesador", "value": "Intel Core i7" }
       ]
     },
     {
       "sku": "sku-207",
-      "name": "Wireless Earbuds",
-      "description": "True wireless earbuds with noise cancellation",
-      "image": "https://example.com/earbuds.jpg",
-      "category": { "id": "cat-005", "name": "Accessories" },
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
       "brand": "Sony",
       "price": 129.99,
       "stock": 120,
       "specifications": [
-        { "name": "Color", "value": "Black" },
-        { "name": "Battery Life", "value": "8 hours" }
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-208",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-209",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-210",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-211",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-212",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-213",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-214",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-215",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-216",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-217",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-218",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-219",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "https://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
+      ]
+    },
+    {
+      "sku": "sku-220",
+      "name": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido",
+      "image": "httlps://www.freepik.com/free-photo/close-up-portrait-smiling-fitness-woman-earphones_7730637.htm#fromView=search&page=1&position=0&uuid=cd3868ae-2e67-4cb9-8f24-f80665ef31c1&new_detail=true",
+      "category": { "id": "cat-005", "name": "Accesorios" },
+      "brand": "Sony",
+      "price": 129.99,
+      "stock": 120,
+      "specifications": [
+        { "name": "Color", "value": "Negro" },
+        { "name": "Duración de batería", "value": "8 horas" }
       ]
     }
   ]
