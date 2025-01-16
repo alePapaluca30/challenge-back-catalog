@@ -61,3 +61,14 @@ server.use((req, res, next) => {
 server.use(router);
 
 const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`JSON Server is running on port ${PORT}`);
+});
+
+server.on("error", (error) => {
+  if (error.code === "EADDRINUSE") {
+    console.error(`Port ${PORT} is already in use. Try a different port.`);
+  } else {
+    console.error("An error occurred:", error);
+  }
+});
