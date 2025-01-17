@@ -118,4 +118,3 @@ El catálogo incluye productos en las siguientes categorías:
 ---
 
 Este proyecto implementa una API para un catálogo de productos, proporcionando funcionalidades de consulta, paginación y filtrado de productos.
-```
