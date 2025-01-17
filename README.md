@@ -1,52 +1,62 @@
-# E-commerce API with JSON Server
+# API de Catálogo de Productos con JSON Server
 
-This project sets up a mock e-commerce API using JSON Server, providing endpoints for product data.
+Este proyecto configura una API que proporciona acceso a un catálogo de productos utilizando JSON Server.
 
-## Setup
+## URL Base
 
-1. Install dependencies:
-   ```
-   npm install
-   ```
+La API está desplegada en Render y accesible en:
+```
+https://challenge-back-catalog.onrender.com
+```
 
-2. Start the server:
-   ```
-   npm start
-   ```
+## Endpoints de la API
 
-The server will run on `http://localhost:3000` by default.
-
-## API Endpoints
-
-### Get Products
+### Obtener Productos del Catálogo
 
 - **URL**: `/products`
-- **Method**: `GET`
-- **Query Parameters**:
-  - `_page`: Page number (default: 1)
-  - `_per_page`: Items per page (default: 10)
-  - `sku`: Filter by SKU
-  - `category.name`: Filter by category name
-  - `name`: Filter by product name (partial match)
+- **URL Completa**: `https://challenge-back-catalog.onrender.com/products`
+- **Método**: `GET`
+- **Parámetros de consulta**:
+  - `_page`: Número de página (por defecto: 1)
+  - `_per_page`: Elementos por página (por defecto: 10)
+  - `sku`: Filtrar por SKU
+  - `name`: Filtrar por nombre de producto (coincidencia parcial)
 
-### Response Format
+### Ejemplos de Uso
 
-The API returns paginated results with the following structure:
+1. Obtener la primera página del catálogo:
+```
+GET https://challenge-back-catalog.onrender.com/products?_page=1&_per_page=10
+```
+
+2. Filtrar productos por SKU:
+```
+GET https://challenge-back-catalog.onrender.com/products?sku=sku-203
+```
+
+3. Buscar productos por nombre:
+```
+GET https://challenge-back-catalog.onrender.com/products?name=camiseta%20Casual
+```
+
+### Formato de Respuesta
+
+La API devuelve resultados paginados con la siguiente estructura:
 
 ```json
 {
   "data": [
     {
       "sku": "sku-201",
-      "name": "Product Name",
-      "description": "Product Description",
-      "image": "image_url",
-      "category": { "id": "cat-001", "name": "Category Name" },
-      "brand": "Brand Name",
+      "name": "Nombre del Producto",
+      "description": "Descripción del Producto",
+      "image": "url_de_la_imagen",
+      "category": { "id": "cat-001", "name": "Nombre de la Categoría" },
+      "brand": "Nombre de la Marca",
       "price": 29.99,
       "stock": 100,
       "specifications": [
-        { "name": "Spec Name", "value": "Spec Value" }
+        { "name": "Nombre de la Especificación", "value": "Valor de la Especificación" }
       ]
     }
   ],
@@ -59,42 +69,53 @@ The API returns paginated results with the following structure:
 }
 ```
 
-## Headers
+## Encabezados de Respuesta
 
-- `X-Total-Count`: Total number of items
-- `X-Total-Pages`: Total number of pages
+- `X-Total-Count`: Número total de productos en el catálogo
+- `X-Total-Pages`: Número total de páginas disponibles
 
-## Error Handling
+## Manejo de Errores
 
-- 404 Not Found: When no products match the query
-- 500 Internal Server Error: For server-side errors
+- 404 No Encontrado: Cuando ningún producto coincide con los criterios de búsqueda
+- 500 Error Interno del Servidor: Para errores del lado del servidor
 
-## Data Structure
+## Estructura de los Productos
 
-The `db.json` file contains an array of product objects with the following structure:
+Cada producto en el catálogo contiene los siguientes campos:
 
-- `sku`: String (unique identifier)
-- `name`: String
-- `description`: String
-- `image`: String (URL)
-- `category`: Object { id: String, name: String }
-- `brand`: String
-- `price`: Number
-- `stock`: Number
-- `specifications`: Array of Objects { name: String, value: String }
+- `sku`: String (identificador único del producto)
+- `name`: String (nombre del producto)
+- `description`: String (descripción detallada)
+- `image`: String (URL de la imagen del producto)
+- `category`: Objeto { id: String, name: String }
+- `brand`: String (marca del producto)
+- `price`: Number (precio del producto)
+- `stock`: Number (cantidad disponible)
+- `specifications`: Array de Objetos { name: String, value: String }
 
-## Dependencies
+## Categorías Disponibles
+
+El catálogo incluye productos en las siguientes categorías:
+- Ropa
+- Celulares
+- Laptops
+- Tablets
+- Accesorios
+- Electrónica
+- Hogar
+
+## Métodos HTTP Disponibles
+
+- `GET`: Consultar productos del catálogo
+
+## Dependencias
 
 - json-server
 - express
 - cors
 - lodash
 
-## Scripts
-
-- `npm start`: Starts the JSON Server
-
 ---
 
-This project uses JSON Server to create a mock API for an e-commerce application, providing endpoints for product data with pagination, filtering, and error handling.
+Este proyecto implementa una API para un catálogo de productos, proporcionando funcionalidades de consulta, paginación y filtrado de productos.
 ```
