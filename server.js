@@ -24,7 +24,7 @@ server.use((req, res, next) => {
 
       if (categoryName) result = result.filter(product => product.category.name === categoryName);
 
-      if (result.length === 0) return res.status(404).json("No encontrado");
+      if (result.length === 0) return res.status(404).json({ error: "No encontrado" });
 
       const total = result.length;
       const pages = Math.ceil(total / limit);
@@ -33,19 +33,21 @@ server.use((req, res, next) => {
 
       const paginatedData = result.slice(start, end);
 
-      // Set pagination information in headers
-      res.header('X-Total-Count', total.toString());
-      res.header('X-Total-Pages', pages.toString());
-      res.header('X-Page', page.toString());
-      res.header('X-Per-Page', limit.toString());
-      res.header('X-Next-Page', (page < pages ? page + 1 : null)?.toString());
-      res.header('X-Prev-Page', (page > 1 ? page - 1 : null)?.toString());
+      res.header('X-Total-Count', total);
+      res.header('X-Total-Pages', pages);
       
-      // Return only the data array
-      res.jsonp(paginatedData);
+      res.jsonp({
+        data: paginatedData,
+        items: total,
+        pages: pages,
+        first: 1,
+        last: pages,
+        prev: page > 1 ? page - 1 : null,
+        next: page < pages ? page + 1 : null
+      });
     } catch (error) {
       console.error('Error interno del servidor:', error);
-      res.status(500).json("No se pudo cargar");
+      res.status(500).json({ error: "No se pudo cargar" });
     }
   } else {
     next();
@@ -56,7 +58,7 @@ server.use(router);
 
 server.use((err, req, res, next) => {
   console.error('Error no manejado:', err);
-  res.status(500).json("No se pudo cargar");
+  res.status(500).json({ error: "No se pudo cargar" });
 });
 
 const PORT = process.env.PORT || 3000;
